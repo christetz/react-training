@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "name": "@advanced-react/components",
+  "version": "1.0.0",
+  "description": "React component library",
+  "main": "dist/index.js",
+  "scripts": {
+    "develop": "tsc --watch",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.2",
+    "typescript": "3.6.3"
+  },
+  "dependencies": {
+    "react": "16.9.0"
+  }
+}

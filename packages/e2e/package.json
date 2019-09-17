@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "name": "@advaned-react/e2e",
+  "version": "1.0.0",
+  "description": "E2E Tests",
+  "scripts": {
+    "test": "jest ./test"
+  },
+  "devDependencies": {
+    "@babel/core": "7.6.0",
+    "@babel/preset-env": "7.6.0",
+    "@babel/preset-react": "7.0.0",
+    "babel-jest": "24.9.0",
+    "enzyme": "3.10.0",
+    "enzyme-adapter-react-16": "1.14.0",
+    "jest": "24.9.0",
+    "jest-puppeteer": "4.3.0",
+    "puppeteer": "1.20.0",
+    "react-test-renderer": "16.9.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.26.0",
+    "react": "16.9.0",
+    "react-dom": "16.9.0"
+  },
+  "jest": {
+    "verbose": true,
+    "preset": "jest-puppeteer",
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ]
+  }
+}

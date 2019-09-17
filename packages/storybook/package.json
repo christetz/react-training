@@ -1,0 +1,20 @@
+{
+  "private": true,
+  "name": "@advaned-react/storybook",
+  "version": "1.0.0",
+  "description": "Storybook",
+  "scripts": {
+    "develop": "start-storybook -p 6006",
+    "build": "build-storybook"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@advanced-react/components": "1.0.0",
+    "@babel/core": "7.6.0",
+    "@storybook/addon-actions": "5.2.0",
+    "@storybook/addon-links": "5.2.0",
+    "@storybook/addons": "5.2.0",
+    "@storybook/react": "5.2.0",
+    "babel-loader": "8.0.6"
+  }
+}

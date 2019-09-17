@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "@advanced-react/app",
+  "version": "1.0.0",
+  "description": "The SPA App",
+  "scripts": {
+    "develop": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel-bundler": "1.12.3"
+  },
+  "dependencies": {
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "react-router": "5.0.1",
+    "@advanced-react/components": "1.0.0"
+  }
+}
