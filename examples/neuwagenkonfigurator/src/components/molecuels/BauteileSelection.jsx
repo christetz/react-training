@@ -1,27 +1,22 @@
-import React from "react";
-import { Bauteil } from "../atomics/Bauteil";
+import React, { useState, useEffect } from 'react';
+import { Bauteil } from '../atomics/Bauteil';
 
-export function BauteileSelection({
-  onBauteilSelected = (selectedBauteil, isSelected) => {},
-  bauteile = [
-    { name: "motor", isSelected: false },
-    { name: "aussenspiegel", isSelected: false },
-    { name: "reifen", isSelected: false },
-    { name: "innenspiegel", isSelected: false },
-    { name: "navi", isSelected: false },
-    { name: "Lenkrad", isSelected: false },
-    { name: "Rueckleuchten", isSelected: false },
-    { name: "Sitzklimatik", isSelected: false }
-  ]
-}) {
+export function BauteileSelection({ onBauteilSelected = (selectedBauteil, isSelected) => {} }) {
+  const [bauteile, setBauteile] = useState([]);
+
+  useEffect(() => {
+    fetch('http://localhost:8080/bauteile')
+      .then(response => response.json())
+      .then(data => setBauteile(data));
+  }, []);
+
   const bauteilecomponents = bauteile.map(teil => {
     return (
       <Bauteil
         name={teil.name}
         key={teil.name}
         isSelected={teil.isSelected}
-        onSelectHandler={selected => onBauteilSelected(teil.name, selected)}
-      ></Bauteil>
+        onSelectHandler={selected => onBauteilSelected(teil.name, selected)}></Bauteil>
     );
   });
   return <div>{bauteilecomponents}</div>;
