@@ -1,0 +1,13 @@
+{
+  "name": "components",
+  "version": "1.0.0",
+  "description": "Neuwagenkonfigurator React Components",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "parcel build src/index.jsx"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3",
+    "react": "^16.9.0"
+  }
+}

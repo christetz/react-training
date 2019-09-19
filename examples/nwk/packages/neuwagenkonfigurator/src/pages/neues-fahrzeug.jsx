@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { Headline } from 'components';
 
 export function NeuesFahrzeugSeite({ name = '...' }) {
   const [newName, setNewName] = useState(name);
@@ -15,6 +16,7 @@ export function NeuesFahrzeugSeite({ name = '...' }) {
 
   return (
     <div>
+      <Headline text="Hello ..." />
       <h1> Fahrzeug {newName}</h1>
       <label>Name</label>
       <input
