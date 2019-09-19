@@ -1,5 +1,6 @@
 import React from 'react';
+import { MainPage } from './pages/MainPage';
 
 export function App() {
-  return <h1>Hello World</h1>;
+  return <MainPage />;
 }
