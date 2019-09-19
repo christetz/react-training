@@ -7,6 +7,8 @@ describe('Unit Tests', () => {
 
       //Act
       const actual = sum(1, 1);
+
+      //Assert
       expect(actual).toBe(2);
     });
   });
