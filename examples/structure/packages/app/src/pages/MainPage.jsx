@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import styles from './MainPage.css';
 
 export function MainPage() {
   async function foo() {
@@ -8,5 +9,11 @@ export function MainPage() {
   useEffect(() => {
     foo();
   }, []);
-  return <h1 data-test-id="headline">Hello World</h1>;
+
+  console.log(styles);
+  return (
+    <h1 data-test-id="headline" className="headline">
+      Hello World
+    </h1>
+  );
 }
