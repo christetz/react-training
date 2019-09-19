@@ -1,6 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Headline } from 'components';
 
+export function sum(a, b) {
+  return a + b;
+}
+
 export function NeuesFahrzeugSeite({ name = '...' }) {
   const [newName, setNewName] = useState(name);
 

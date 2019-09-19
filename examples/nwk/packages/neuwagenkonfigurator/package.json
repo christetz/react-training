@@ -5,17 +5,23 @@
   "main": "index.js",
   "scripts": {
     "develop": "parcel src/index.html",
-    "build": "parcel build src/index.html"
+    "build": "parcel build src/index.html",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "enzyme": "^3.10.0",
+    "jest": "^24.9.0",
     "parcel-bundler": "^1.12.3"
   },
   "dependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "components": "1.0.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "components": "1.0.0"
+    "react-dom": "^16.9.0"
   }
 }

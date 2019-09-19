@@ -6,6 +6,7 @@
   "scripts": {
     "link": "lerna link",
     "develop": "lerna run develop --stream",
-    "build": "lerna run build --stream"
+    "build": "lerna run build --stream",
+    "test": "lerna run test --stream"
   }
 }
